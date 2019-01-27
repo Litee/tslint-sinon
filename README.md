@@ -20,3 +20,7 @@ This package provides additional TSLint rules that help to enforce some best pra
     "tslint-sinon"
   ]
 ```
+
+## Status
+
+[![Build Status](https://travis-ci.org/Litee/tslint-sinon.png)](https://travis-ci.org/Litee/tslint-sinon)
