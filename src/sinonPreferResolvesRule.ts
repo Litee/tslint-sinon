@@ -40,7 +40,7 @@ class PreferResolvesWalker extends Lint.RuleWalker {
               const promiseResolvePropertyAccess = expression as ts.PropertyAccessExpression;
               const resolveMethodName = promiseResolvePropertyAccess.name.text;
               if (promiseResolvePropertyAccess.expression.getText() === "Promise" && resolveMethodName === "resolve") {
-                this.addFailureAtNode(node, `Use Stub.resolves() instead!`);
+                this.addFailureAtNode(node, `Use Stub.resolves() method instead`);
               }
             }
           }

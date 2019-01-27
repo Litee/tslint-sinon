@@ -36,7 +36,7 @@ class PreferSandboxWalker extends Lint.RuleWalker {
       if (calleeName.getText() === "sinon") {
         const methodName = propertyAccess.name.text;
         if (this.functionNames.indexOf(methodName) > -1) {
-          this.addFailureAtNode(node, `Use sandbox.${methodName}() instead!`);
+          this.addFailureAtNode(node, `Create fakes via sandbox.${methodName}() instead`);
         }
       }
     }

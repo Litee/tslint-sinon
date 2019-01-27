@@ -5,7 +5,7 @@ var stub = sinon.stub();
 stub.resolves(123);
 
 stub.returns(Promise.resolve(123));
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [Use Stub.resolves() instead!]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [Use Stub.resolves() method instead]
 
 stub.returns(Promise.resolve());
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [Use Stub.resolves() instead!]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [Use Stub.resolves() method instead]

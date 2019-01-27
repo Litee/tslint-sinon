@@ -5,22 +5,22 @@ let fake;
 // Bad
 
 fake = sinon.stub();
-       ~~~~~~~~~~~~ [Use sandbox.stub() instead!]
+       ~~~~~~~~~~~~ [Create fakes via sandbox.stub() instead]
 
 fake = sinon.stub({});
-       ~~~~~~~~~~~~~~ [Use sandbox.stub() instead!]
+       ~~~~~~~~~~~~~~ [Create fakes via sandbox.stub() instead]
 
 fake = sinon.stub({}, "myFunc");
-       ~~~~~~~~~~~~~~~~~~~~~~~~ [Use sandbox.stub() instead!]
+       ~~~~~~~~~~~~~~~~~~~~~~~~ [Create fakes via sandbox.stub() instead]
 
 fake = sinon.createStubInstance(MyConstructor, overrides);
-       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [Use sandbox.createStubInstance() instead!]
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [Create fakes via sandbox.createStubInstance() instead]
 
 fake = sinon.mock({});
-       ~~~~~~~~~~~~~~ [Use sandbox.mock() instead!]
+       ~~~~~~~~~~~~~~ [Create fakes via sandbox.mock() instead]
 
 fake = sinon.spy();
-       ~~~~~~~~~~~ [Use sandbox.spy() instead!]
+       ~~~~~~~~~~~ [Create fakes via sandbox.spy() instead]
 
 // Good
 
