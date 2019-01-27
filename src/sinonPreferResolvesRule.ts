@@ -2,6 +2,19 @@ import * as Lint from "tslint";
 import * as ts from "typescript";
 
 export class Rule extends Lint.Rules.AbstractRule {
+
+  public static metadata: Lint.IRuleMetadata = {
+    ruleName: "sinon-prefer-resolves",
+    description: "Suggest using stub.resolves(...) instead of stub.returns(Promise.resolve(...))",
+    optionsDescription: "Not configurable.",
+    options: null,
+    optionExamples: [true],
+    rationale: Lint.Utils.dedent`
+        Sinon library provides a shorter idiom for returning resolved promises from stubs.`,
+    type: "style",
+    typescriptOnly: false,
+  };
+
   public apply(sourceFile: ts.SourceFile): Lint.RuleFailure[] {
     return this.applyWithWalker(
       new PreferResolvesWalker(sourceFile, this.getOptions()),

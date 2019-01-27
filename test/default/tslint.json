@@ -1,6 +1,6 @@
 {
     "rules": {
-        "prefer-resolves": true
+        "sinon-prefer-resolves": true
     },
     "rulesDirectory": [
         "../../dist"
