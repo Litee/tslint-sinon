@@ -1,0 +1,34 @@
+const sinon = require('sinon');
+
+let fake;
+
+// Bad
+
+fake = sinon.stub();
+       ~~~~~~~~~~~~ [Use sandbox.stub() instead!]
+
+fake = sinon.stub({});
+       ~~~~~~~~~~~~~~ [Use sandbox.stub() instead!]
+
+fake = sinon.stub({}, "myFunc");
+       ~~~~~~~~~~~~~~~~~~~~~~~~ [Use sandbox.stub() instead!]
+
+fake = sinon.createStubInstance(MyConstructor, overrides);
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [Use sandbox.createStubInstance() instead!]
+
+fake = sinon.mock({});
+       ~~~~~~~~~~~~~~ [Use sandbox.mock() instead!]
+
+fake = sinon.spy();
+       ~~~~~~~~~~~ [Use sandbox.spy() instead!]
+
+// Good
+
+var sandbox = sinon.createSandbox();
+
+fake = sandbox.stub();
+fake = sandbox.stub({});
+fake = sandbox.stub({}, "myFunc");
+fake = sandbox.createStubInstance(MyConstructor, overrides);
+fake = sandbox.mock();
+fake = sandbox.spy();

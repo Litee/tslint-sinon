@@ -1,9 +1,10 @@
 # tslint-sinon
-This package provides TSLint rules for Sinon mocking library (currently only one rule)
+This package provides additional TSLint rules that help to enforce some best practices when using Sinon mocking library.
 
 ## Rules
 
-* `sinon-prefer-resolves` - suggests to use `stub.resolves(x)` instead of `stub.returns(Promise.resolve(x))`
+* `sinon-prefer-resolves` - suggests to use `stub.resolves(x)` instead of `stub.returns(Promise.resolve(x))`.
+* `sinon-prefer-sandbox` - suggests to create fakes via `sandbox` instead of creating them directly.
 
 ## How to install
 
@@ -12,7 +13,8 @@ This package provides TSLint rules for Sinon mocking library (currently only one
 
 ```json
   "rules": {
-    "sinon-prefer-resolves": true
+    "sinon-prefer-resolves": true,
+    "sinon-prefer-sandbox": true
   },
   "rulesDirectory": [
     "tslint-sinon"

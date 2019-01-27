@@ -1,0 +1,9 @@
+{
+    "rules": {
+        "sinon-prefer-sandbox": true
+    },
+    "rulesDirectory": [
+        "../../dist"
+    ]
+}
+
