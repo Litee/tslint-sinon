@@ -1,9 +1,9 @@
 export = {
   rulesDirectory: ".",
   rules: {
-    "prefer-resolves": true,
+    "sinon-prefer-resolves": true,
   },
   jsRules: {
-    "prefer-resolves": true,
+    "sinon-prefer-resolves": true,
   },
 };
