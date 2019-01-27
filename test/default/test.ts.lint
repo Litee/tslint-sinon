@@ -1,0 +1,11 @@
+const sinon = require('sinon');
+
+var stub = sinon.stub();
+
+stub.resolves(123);
+
+stub.returns(Promise.resolve(123));
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [Use Stub.resolves() instead!]
+
+stub.returns(Promise.resolve());
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [Use Stub.resolves() instead!]

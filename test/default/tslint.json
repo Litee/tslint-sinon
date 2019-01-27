@@ -1,0 +1,9 @@
+{
+    "rules": {
+        "prefer-resolves": true
+    },
+    "rulesDirectory": [
+        "../../dist"
+    ]
+}
+
