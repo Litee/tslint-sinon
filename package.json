@@ -1,6 +1,6 @@
 {
   "name": "tslint-sinon",
-  "version": "1.1.0-alpha",
+  "version": "1.1.0",
   "description": "Rules for Sinon mocking library",
   "main": "dist/index.js",
   "private": false,
