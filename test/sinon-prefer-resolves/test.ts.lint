@@ -9,3 +9,13 @@ stub.returns(Promise.resolve(123));
 
 stub.returns(Promise.resolve());
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [Use Stub.resolves() method instead]
+
+stub.returns(Promise.resolve(1 + 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  2));
+~~~~~ [Use Stub.resolves() method instead]
+
+if (true) {
+  stub.returns(Promise.resolve(123));
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ [Use Stub.resolves() method instead]
+}

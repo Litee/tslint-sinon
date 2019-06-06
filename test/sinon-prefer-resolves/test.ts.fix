@@ -7,3 +7,10 @@ stub.resolves(123);
 stub.resolves(123);
 
 stub.resolves();
+
+stub.resolves(1 + 
+  2);
+
+if (true) {
+  stub.resolves(123);
+}
