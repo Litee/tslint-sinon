@@ -1,0 +1,9 @@
+const sinon = require('sinon');
+
+var stub = sinon.stub();
+
+stub.resolves(123);
+
+stub.resolves(123);
+
+stub.resolves();
