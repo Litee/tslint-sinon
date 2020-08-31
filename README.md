@@ -1,4 +1,7 @@
 # tslint-sinon
+
+UPDATE: Project is abandoned because TSLint is being replaced by ESLint + plugins.
+
 This package provides additional TSLint rules that help to enforce some best practices when using Sinon mocking library.
 
 ## Supported rules
